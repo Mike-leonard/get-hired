@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './routes/Root';
-import ErrorPage from './ErrorPage';
+import ErrorPage from './components/ErrorPage';
 import Statistics from './routes/Statistics';
 import AppliedJobs from './routes/AppliedJobs';
 import Blog from './routes/Blog';
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Index />
+            element: <Index />,
           },
           {
             path: "/statistics",

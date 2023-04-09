@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "https://img.icons8.com/external-others-pike-picture/256/external-calendar-health-checkup-medical-others-pike-picture-4.png",
+        "title": "Account & Finance",
+        "text": "300 Jobs Available"
+    },
+    {
+        "id": 2,
+        "icon": "https://img.icons8.com/external-others-pike-picture/256/external-employees-outsource-management-others-pike-picture-2.png",
+        "title": "Creative Design",
+        "text": "100+ Jobs Available"
+    },
+    {
+        "id": 3,
+        "icon": "https://img.icons8.com/external-others-pike-picture/256/external-app-pos-terminal-device-others-pike-picture-4.png",
+        "title": "Marketing & Sales",
+        "text": "150 Jobs Available"
+    },
+    {
+        "id": 4,
+        "icon": "https://img.icons8.com/external-others-pike-picture/256/external-badge-office-and-workplace-others-pike-picture-14.png",
+        "title": "Engineering Job",
+        "text": "224 Jobs Available"
+    }
+]
