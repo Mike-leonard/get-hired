@@ -1,12 +1,12 @@
 import React from 'react';
 import ActiveLink from './ActiveLink';
-import HomeBanner from './banner/HomeBanner';
+import HomeBanner from './banner/BannerHome';
 
 const Header = () => {
     return (
         <header className='bg-[#DBCFC7] p-5'>
             <div className='flex justify-between items-center'>
-            <h2 className='text-3xl cursor-pointer'>GetHired</h2>
+            <h2 className='text-3xl cursor-pointer' onClick={() => window.location='/'}>GetHired</h2>
            
             <nav>
                 <ul className='flex gap-10'>
