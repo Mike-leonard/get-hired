@@ -6,6 +6,7 @@ import BannerStatistics from '../routes/banner/BannerStatistics';
 import BannerApplied from '../routes/banner/BannerApplied';
 import BannerBlog from '../routes/banner/BannerBlog';
 import ErrorPage from './ErrorPage';
+import BannerJobDescription from '../routes/banner/BannerJobDescription';
 
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
     const location = useLocation();
 
     const getBanner = () => {
+
         if (location.pathname === "/") {
             return <BannerHome />;
         } else if (location.pathname === "/statistics") {
@@ -22,8 +24,16 @@ const Header = () => {
         } else if (location.pathname === "/blog") {
             return <BannerBlog />;
         } else {
-            return <ErrorPage />;
+            const dynamic = location.pathname
+            console.log(dynamic)
+            if (dynamic.includes('/job/')) {
+                return <BannerJobDescription />;
+            } else {
+                return <ErrorPage />;
+            }
         }
+
+
     };
 
     return (

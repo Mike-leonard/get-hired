@@ -62,7 +62,6 @@ const data = [
 ];
 
 const formatTooltip = (value, name, props) => {
-    console.log(props.payload.name)
     if (name === 'gotMarks') {
         return `${value} on ${props.payload.name} `;
     }

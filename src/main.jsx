@@ -12,6 +12,7 @@ import Statistics from './routes/Statistics';
 import AppliedJobs from './routes/AppliedJobs';
 import Blog from './routes/Blog';
 import Index from './routes/Index';
+import JobDescription from './routes/JobDescription';
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
           {
             path: "/blog",
             element: <Blog />,
+          },
+          {
+            path: "/job/:id",
+            element: <JobDescription />,
           },
         ]
       }
