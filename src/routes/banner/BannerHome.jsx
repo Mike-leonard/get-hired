@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeBanner = () => {
+const BannerHome = () => {
     return (
         <div className='flex mt-5 gap-10 items-center'>
             <div className=''>
@@ -16,4 +16,4 @@ const HomeBanner = () => {
     );
 };
 
-export default HomeBanner;
+export default BannerHome;

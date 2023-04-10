@@ -1,8 +1,31 @@
 import React from 'react';
-import ActiveLink from '../ActiveLink';
-import HomeBanner from './banner/BannerHome';
+import ActiveLink from './ActiveLink';
+import { useLocation } from 'react-router-dom';
+import BannerHome from '../routes/banner/BannerHome';
+import BannerStatistics from '../routes/banner/BannerStatistics';
+import BannerApplied from '../routes/banner/BannerApplied';
+import BannerBlog from '../routes/banner/BannerBlog';
+import ErrorPage from './ErrorPage';
+
 
 const Header = () => {
+
+    const location = useLocation();
+
+    const getBanner = () => {
+        if (location.pathname === "/") {
+            return <BannerHome />;
+        } else if (location.pathname === "/statistics") {
+            return <BannerStatistics />;
+        } else if (location.pathname === "/applied-jobs") {
+            return <BannerApplied />;
+        } else if (location.pathname === "/blog") {
+            return <BannerBlog />;
+        } else {
+            return <ErrorPage />;
+        }
+    };
+
     return (
         <header className='bg-[#DBCFC7] p-5'>
             <div className='flex justify-between items-center'>
@@ -20,7 +43,9 @@ const Header = () => {
                 <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             p-3 rounded-lg font-semibold'>Start Applying</button>
             </div>
-            <HomeBanner />
+            {
+                getBanner()
+            }
         </header>
     );
 };
