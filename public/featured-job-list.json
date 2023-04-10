@@ -1,0 +1,110 @@
+[
+    {
+        "id": "job001",
+        "companyLogo": "https://thumbs.dreamstime.com/b/abc-initials-letter-company-logo-icon-abc-initials-letter-company-logo-148669540.jpg",
+        "jobTitle": "Full Stack Developer",
+        "companyName": "ABC Company",
+        "jobType": "Remote",
+        "location": "Anywhere",
+        "time": "Full-time",
+        "salary": "Competitive",
+        "jobDescription": "We are seeking an experienced Full Stack Developer to join our growing team...",
+        "jobResponsibility": "Develop and maintain web applications using modern technologies...",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field...",
+        "experiences": "Minimum of 5 years of experience in web development...",
+        "contactInformation": {
+            "phone": "123-456-7890",
+            "email": "jobs@abccompany.com"
+        }
+    },
+    {
+        "id": "job002",
+        "companyLogo": "https://thumbs.dreamstime.com/b/abc-initials-letter-company-logo-icon-abc-initials-letter-company-logo-148669540.jpg",
+        "jobTitle": "Marketing Manager",
+        "companyName": "XYZ Company",
+        "jobType": "Onsite",
+        "location": "New York, NY",
+        "time": "Full-time",
+        "salary": "$100,000 - $120,000",
+        "jobDescription": "We are seeking a talented Marketing Manager to oversee our marketing initiatives...",
+        "jobResponsibility": "Develop and implement marketing strategies...",
+        "educationalRequirements": "Bachelor's or Master's degree in Marketing or a related field...",
+        "experiences": "Minimum of 7 years of experience in marketing...",
+        "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "jobs@xyzcompany.com"
+        }
+    },
+    {
+        "id": "job003",
+        "companyLogo": "https://www.one77fs.co.uk/wp-content/uploads/2018/06/Cool-Example-Company-Logo-33-For-Logo-Inspiration-with-Example-Company-Logo-e1504694443294.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "Example Inc.",
+        "jobType": "Remote",
+        "location": "Dhaka, Bangladesh",
+        "time": "Full-time",
+        "salary": "$100,000 - $150,000",
+        "jobDescription": "We are looking for a talented software engineer to join our team and help us build amazing products.",
+        "jobResponsibility": "Develop new features and maintain existing codebase.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
+        "experiences": "3+ years of experience in software development.",
+        "contactInformation": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": "job004",
+        "companyLogo": "https://images-platform.99static.com//ALS-pckUJVsiU6Nn4KSHEdBiseE=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/108/108554/attachment_108554645",
+        "jobTitle": "Product Manager",
+        "companyName": "City Wide",
+        "jobType": "Onsite",
+        "location": "Copenhagen, Denmark ",
+        "time": "Full-time",
+        "salary": "$120,000 - $160,000",
+        "jobDescription": "We are seeking a skilled product manager to lead our team in developing innovative products that meet the needs of our customers.",
+        "jobResponsibility": "Develop product strategies and roadmaps, work with cross-functional teams to develop new products and improve existing ones.",
+        "educationalRequirements": "Bachelor's degree in Business, Marketing, or related field.",
+        "experiences": "5+ years of experience in product management.",
+        "contactInformation": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": "job005",
+        "companyLogo": "https://visme.co/blog/wp-content/uploads/2017/08/40-Creative-Logo-Designs-to-Inspire-You-Movers-logo.jpg",
+        "jobTitle": "UX Designer",
+        "companyName": "Movers.",
+        "jobType": "Remote",
+        "location": "Stauffacherstrasse, Switzerland",
+        "time": "Part-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "We are seeking a talented UX designer to help us create user-centered designs for our products.",
+        "jobResponsibility": "Develop wireframes, prototypes, and user flows, work with cross-functional teams to develop and test designs.",
+        "educationalRequirements": "Bachelor's degree in Design, Computer Science, or related field.",
+        "experiences": "3+ years of experience in UX design.",
+        "contactInformation": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": "job006",
+        "companyLogo": "https://www.acmeticketing.com/wp-content/uploads/2017/08/ACME-logo.png",
+        "jobTitle": "Senior Frontend Developer",
+        "companyName": "Acme Inc.",
+        "jobType": "Remote",
+        "location": "San Francisco, CA",
+        "time": "Full-time",
+        "salary": "$120,000 - $140,000",
+        "jobDescription": "We are looking for a talented Senior Frontend Developer to join our team...",
+        "jobResponsibility": "- Design, develop and maintain responsive web applications\n- Collaborate with cross-functional teams to define, design, and ship new features\n- Continuously discover, evaluate, and implement new technologies to maximize development efficiency\n",
+        "educationalRequirements": "- Bachelor's or Master's degree in Computer Science or a related field\n- Strong understanding of HTML, CSS, and JavaScript\n- Experience with React, Redux, and Node.js",
+        "experiences": "- 5+ years of experience in frontend development\n- Experience with agile development methodologies\n- Strong problem-solving and analytical skills",
+        "contactInformation": {
+            "phone": "555-1234",
+            "email": "jobs@acme.com"
+        }
+    }
+]
