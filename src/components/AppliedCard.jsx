@@ -4,11 +4,11 @@ import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
 const AppliedCard = () => {
     return (
         <div className='border py-2 pl-2 pr-5 w-8/12 mx-auto my-2'>
-            <div class="flex flex-row">
-                <div class="basis-1/4 flex flex-row items-center justify-center">
+            <div className="flex flex-row">
+                <div className="basis-1/4 flex flex-row items-center justify-center">
                     <img className='w-32' src="https://thumbs.dreamstime.com/b/abc-initials-letter-company-logo-icon-abc-initials-letter-company-logo-148669540.jpg" alt="" />
                 </div>
-                <div class="basis-5/6 flex flex-col justify-center">
+                <div className="basis-5/6 flex flex-col justify-center">
                     <h6 className='font-semibold'>jobTitle</h6>
                     <p className='font-mono text-slate-500'>companyName</p>
                     <div className='flex gap-3 my-3'>
@@ -26,7 +26,7 @@ const AppliedCard = () => {
                         </p>
                     </div>
                 </div>
-                <div class="basis-1/4 flex flex-row items-center">
+                <div className="basis-1/4 flex flex-row items-center">
                     <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             p-2 rounded-sm font-semibold w-full '>View Details</button>
                 </div>

@@ -25,7 +25,7 @@ const FeatureCard = () => {
                         salary
                     </p>
                 </div>
-                <div class="basis-1/4 flex flex-row items-center my-3">
+                <div className="basis-1/4 flex flex-row items-center my-3">
                     <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             py-2 px-6 rounded-sm font-semibold '>View Details</button>
                 </div>

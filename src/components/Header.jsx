@@ -37,7 +37,7 @@ const Header = () => {
     };
 
     return (
-        <header className='bg-[#DBCFC7] px-[18%] py-2'>
+        <header className='bg-[#DBCFC7] px-[12%] py-2'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-3xl cursor-pointer' onClick={() => window.location = '/'}>GetHired</h2>
 

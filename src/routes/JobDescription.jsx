@@ -5,8 +5,8 @@ const JobDescription = () => {
     return (
         <div className=' my-10 mx-24'>
 
-            <div class="flex flex-row gap-10 justify-center">
-                <div class="basis-4/5">
+            <div className="flex flex-row gap-10 justify-center">
+                <div className="basis-4/5">
                     <h6 className='mb-5'><span className='font-semibold'>Job Description:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</h6>
 
                     <h6 className='mb-5'><span className='font-semibold'>Job Responsibility:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</h6>
@@ -14,14 +14,14 @@ const JobDescription = () => {
                     <h6 className='font-semibold mb-2'>Educational Requirements:</h6>
                     <p className='mb-5'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</p>
-                        
+
                     <h6 className='font-semibold mb-2'>Experiences:</h6>
                     <p className=''>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!
                     </p>
                 </div>
 
-                <div class="basis-2/6">
+                <div className="basis-2/6">
                     <div className='bg-[#DBCFC7] p-4 rounded-md text-sm'>
                         <h4 className='font-bold my-3'>Job Details</h4>
                         <hr />

@@ -2,7 +2,6 @@ import React from 'react';
 
 const ListCard = ({item}) => {
     const { icon, title , text} = item;
-    console.log(icon)
     return (
         <div className="card rounded-md bg-[#DBCFC7] px-10 py-7">
             <div className="my-5 "> 

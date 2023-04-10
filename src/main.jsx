@@ -13,6 +13,7 @@ import AppliedJobs from './routes/AppliedJobs';
 import Blog from './routes/Blog';
 import Index from './routes/Index';
 import JobDescription from './routes/JobDescription';
+import { featureJobLoader } from './loaders/featureJobLoader';
 
 
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <Index />,
+            loader: featureJobLoader,
           },
           {
             path: "/statistics",
