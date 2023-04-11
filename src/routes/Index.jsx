@@ -25,15 +25,20 @@ const Index = () => {
     const jobLists = useLoaderData()
     const initialJobData = jobLists.slice(0, 4)
 
+    /* Initially setting 4 set of data */
     useEffect(() => {
         setJobs(initialJobData);
     }, []);
 
+    /* Now set all data with button clicked */
     const seeAllJobs = () => {
         setJobs(jobLists)
         setShowButton(!showButton)
     };
-    console.log(jobs)
+
+    const viewDetailsClicked = (id) => {
+        console.log(id)
+    }
 
     return (
         <div className='p-5 my-8'>
@@ -54,7 +59,7 @@ const Index = () => {
 
                 <div className='grid grid-cols-2 gap-8 my-5 w-9/12 mx-auto'>
                     {
-                        jobs.map(item => <FeatureCard key={item.id} />)
+                        jobs.map(job => <FeatureCard job={job} viewDetailsClicked={viewDetailsClicked}  key={job.id} />)
                     }
                 </div>
 
