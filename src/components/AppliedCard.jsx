@@ -1,10 +1,17 @@
 import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { useNavigate } from 'react-router-dom';
 
-const AppliedCard = ({ single }) => {
+const AppliedCard = ({ singleJob }) => {
     const { id, companyLogo, companyName, time, salary,
         jobTitle, jobType, location
-    } = single;
+    } = singleJob;
+
+    const navigate = useNavigate()
+    const viewDetailsClicked = (id) => {
+        const path = `/job/${id}`
+        navigate(path)
+    }
 
     return (
         <div className='border py-2 pl-2 pr-5 w-8/12 mx-auto my-2'>
@@ -31,7 +38,7 @@ const AppliedCard = ({ single }) => {
                     </div>
                 </div>
                 <div className="basis-1/4 flex flex-row items-center">
-                    <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
+                    <button onClick={() => viewDetailsClicked(id)} className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             p-2 rounded-sm font-semibold w-full '>View Details</button>
                 </div>
             </div>

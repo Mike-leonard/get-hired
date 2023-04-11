@@ -17,7 +17,7 @@ const AppliedJobs = () => {
             </div>
 
             {
-                savedJobList.map(single => <AppliedCard single={single} key={single.id} />)
+                savedJobList.map(singleJob => <AppliedCard singleJob={singleJob} key={singleJob.id} />)
             }
         </div>
     );
