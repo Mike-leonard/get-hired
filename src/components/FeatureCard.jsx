@@ -2,7 +2,7 @@ import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
 
 const FeatureCard = ({ job, viewDetailsClicked }) => {
-    const { id, companyLogo, companyName, jobTitle, jobType, time, location, salary } = job
+    const { companyLogo, companyName, jobTitle, jobType, time, location, salary } = job
     return (
         <div className="card rounded-md border-2 px-10 py-7">
             <div className="">
@@ -27,7 +27,7 @@ const FeatureCard = ({ job, viewDetailsClicked }) => {
                     </p>
                 </div>
                 <div className="basis-1/4 flex flex-row items-center my-3">
-                    <button onClick={() => viewDetailsClicked(id)} className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
+                    <button onClick={() => viewDetailsClicked(job)} className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             py-2 px-6 rounded-sm font-semibold '>View Details</button>
                 </div>
             </div>

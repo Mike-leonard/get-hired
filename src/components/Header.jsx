@@ -25,7 +25,6 @@ const Header = () => {
             return <BannerBlog />;
         } else {
             const dynamic = location.pathname
-            console.log(dynamic)
             if (dynamic.includes('/job/')) {
                 return <BannerJobDescription />;
             } else {

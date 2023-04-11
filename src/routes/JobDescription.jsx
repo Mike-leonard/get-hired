@@ -1,24 +1,29 @@
 import React from 'react';
 import { CurrencyDollarIcon, QueueListIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { useLoaderData, useLocation, useParams } from 'react-router-dom';
 
 const JobDescription = () => {
+
+    const params = useParams()
+    const jobLists = useLoaderData()
+    const job = jobLists.find(job => job.id === params.id)
+    const { id, jobDescription, jobResponsibility,
+        educationalRequirements, experiences, salary,
+        jobTitle, contactInformation, location
+    } = job
     return (
         <div className=' my-10 mx-24'>
 
             <div className="flex flex-row gap-10 justify-center">
                 <div className="basis-4/5">
-                    <h6 className='mb-5'><span className='font-semibold'>Job Description:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</h6>
+                    <h6 className='mb-5'><span className='font-semibold'>Job Description:</span> {jobDescription}</h6>
 
-                    <h6 className='mb-5'><span className='font-semibold'>Job Responsibility:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</h6>
+                    <h6 className='mb-5'><span className='font-semibold'>Job Responsibility:</span> {jobResponsibility}</h6>
 
                     <h6 className='font-semibold mb-2'>Educational Requirements:</h6>
-                    <p className='mb-5'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!</p>
-
+                    <p className='mb-5'> {educationalRequirements} </p>
                     <h6 className='font-semibold mb-2'>Experiences:</h6>
-                    <p className=''>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deseruntconsectetur adipisicing elit. Inventore soluta sit quia quasi explicabo labore! Quis quae sunt doloremque deserunt!
-                    </p>
+                    <p className=''>{experiences}</p>
                 </div>
 
                 <div className="basis-2/6">
@@ -28,29 +33,29 @@ const JobDescription = () => {
                         <h6 className='mt-5 mb-2 flex gap-2'>
                             <CurrencyDollarIcon className="h-5 w-5 text-[#534943]" />
                             <span className='font-semibold'>Salary:</span>
-                            100K-150K (Per Month)
+                            {salary} (Per Month)
                         </h6>
                         <h6 className='flex gap-2'>
                             <QueueListIcon className="h-5 w-5 text-[#534943]" />
                             <span className='font-semibold'>Job Title:</span>
-                            Product Designer
+                            {jobTitle}
                         </h6>
                         <h4 className='font-bold my-3'>Contact Information</h4>
                         <hr />
                         <h6 className='mt-5 mb-2 flex gap-2'>
                             <PhoneIcon className="h-5 w-5 text-[#534943]" />
                             <span className='font-semibold'>Phone:</span>
-                            Product Designer
+                            {contactInformation.phone}
                         </h6>
                         <h6 className='flex gap-2 mb-2'>
                             <EnvelopeIcon className="h-5 w-5 text-[#534943]" />
                             <span className='font-semibold'>Email:</span>
-                            Product Designer
+                            {contactInformation.email}
                         </h6>
                         <h6 className='flex gap-2 mb-2'>
                             <MapPinIcon className="h-5 w-5 text-[#534943]" />
                             <span className='font-semibold'>Address:</span>
-                            Product Designer
+                            {location}
                         </h6>
                     </div>
                     <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white

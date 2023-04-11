@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ListCard from '../components/ListCard';
 import FeatureCard from '../components/FeatureCard';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
+import JobDescription from './JobDescription';
 
 const getCategoryItems = async () => {
 
@@ -10,10 +11,13 @@ const getCategoryItems = async () => {
 
 const Index = () => {
 
+    /* using useNavigate hook to listen view details on click */
+    const navigate = useNavigate()
+
     /* job category data fetch */
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('category-list.json')
+        fetch('/category-list.json')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error(error));
@@ -36,8 +40,10 @@ const Index = () => {
         setShowButton(!showButton)
     };
 
-    const viewDetailsClicked = (id) => {
-        console.log(id)
+    /* setting dynamic path with useNavigate hooks and passing this job object */
+    const viewDetailsClicked = (job) => {
+        const path = `/job/${job.id}`
+        navigate(path, {state: job})
     }
 
     return (

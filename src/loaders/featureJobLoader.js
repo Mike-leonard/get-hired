@@ -1,5 +1,5 @@
 export const featureJobLoader = async () => {
-    const jobListData = await fetch('featured-job-list.json')
+    const jobListData = await fetch('/featured-job-list.json')
     const jobLists = await jobListData.json()
 
     /*  const savedCart = getStoredCart()
