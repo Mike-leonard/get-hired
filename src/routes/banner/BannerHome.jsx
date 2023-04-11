@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerHome = () => {
     return (
-        <div className='flex mt-5 gap-10 items-center mx-auto'>
+        <div className='flex flex-col sm:flex-row mt-5 gap-10 items-center mx-auto'>
             <div className=''>
                 <h1 className='text-5xl leading-tight font-extrabold'>One Step <br /> Closer To Your <br /><span className='text-blue-600'>Dream Job</span></h1>
                 <p className='text-[#757575] my-5'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>

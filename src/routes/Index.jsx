@@ -47,7 +47,7 @@ const Index = () => {
                 <h2 className='text-4xl font-bold text-center'>Job Category List</h2>
                 <p className='text-center mt-4 text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                <div className='flex gap-10 my-8 justify-center'>
+                <div className='flex flex-col sm:flex-col md:flex-row gap-10 my-8 justify-center'>
                     {
                         data.map(item => <ListCard item={item} key={item.id} />)
                     }
@@ -58,7 +58,7 @@ const Index = () => {
                 <h2 className='text-4xl font-bold text-center'>Featured Jobs</h2>
                 <p className='text-center mt-4 text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                <div className='grid grid-cols-2 gap-8 my-5 w-9/12 mx-auto'>
+                <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-8 my-5 w-9/12 mx-auto'>
                     {
                         jobs.map(job => <FeatureCard job={job} viewDetailsClicked={viewDetailsClicked}  key={job.id} />)
                     }

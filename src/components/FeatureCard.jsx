@@ -4,7 +4,7 @@ import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
 const FeatureCard = ({ job, viewDetailsClicked }) => {
     const { companyLogo, companyName, jobTitle, jobType, time, location, salary } = job
     return (
-        <div className="card rounded-md border-2 px-10 py-7">
+        <div className="card rounded-md border-2 md:px-10 px-5 py-7">
             <div className="">
                 <img className='w-24 h-20 rounded-lg' src={companyLogo} alt="" />
             </div>
