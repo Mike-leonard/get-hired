@@ -4,11 +4,6 @@ import FeatureCard from '../components/FeatureCard';
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import JobDescription from './JobDescription';
 
-const getCategoryItems = async () => {
-
-}
-
-
 const Index = () => {
 
     /* using useNavigate hook to listen view details on click */
@@ -26,7 +21,7 @@ const Index = () => {
     /* Feature Job list data getting by loader */
     let [showButton, setShowButton] = useState(true)
     const [jobs, setJobs] = useState([])
-    const jobLists = useLoaderData()
+    const {jobLists} = useLoaderData()
     const initialJobData = jobLists.slice(0, 4)
 
     /* Initially setting 4 set of data */

@@ -38,6 +38,7 @@ const router = createBrowserRouter([
           {
             path: "/applied-jobs",
             element: <AppliedJobs />,
+            loader: featureJobLoader,
           },
           {
             path: "/blog",

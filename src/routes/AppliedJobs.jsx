@@ -1,9 +1,11 @@
 import React from 'react';
 import AppliedCard from '../components/AppliedCard';
-
+import { useLoaderData } from 'react-router-dom';
 
 const AppliedJobs = () => {
-    const data= [1,2,3,4]
+
+    const { savedJobList } = useLoaderData()
+    console.log(savedJobList)
     return (
         <div className='p-5 my-8'>
             <div className='py-2 mb-2 flex justify-end w-8/12 mx-auto'>
@@ -15,7 +17,7 @@ const AppliedJobs = () => {
             </div>
 
             {
-                data.map(single => <AppliedCard />)
+                savedJobList.map(single => <AppliedCard single={single} key={single.id} />)
             }
         </div>
     );

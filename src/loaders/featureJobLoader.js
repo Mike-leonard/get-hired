@@ -1,17 +1,17 @@
+import { readDB } from "../utils/dbConnection"
+
 export const featureJobLoader = async () => {
     const jobListData = await fetch('/featured-job-list.json')
     const jobLists = await jobListData.json()
 
-    /*  const savedCart = getStoredCart()
-     const initialCart = []
-     for (const id in savedCart) {
-         const foundProduct = products.find(product => product.id === id)
-         if (foundProduct) {
-             const quantity = savedCart[id]
-             foundProduct.quantity = quantity
-             initialCart.push(foundProduct)
-         }
-     } */
-  
-    return jobLists/* { products, initialCart } */
+    const dbJobList = readDB()
+    const savedJobList = []
+    for (const id in dbJobList) {
+        const foundJob = jobLists.find(job => job.id === id)
+        if (foundJob) {
+            savedJobList.push(foundJob)
+        }
+    }
+
+    return { jobLists, savedJobList }
 }

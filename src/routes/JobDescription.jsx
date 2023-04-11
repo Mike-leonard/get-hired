@@ -1,16 +1,23 @@
 import React from 'react';
 import { CurrencyDollarIcon, QueueListIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { useLoaderData, useLocation, useParams } from 'react-router-dom';
+import { addToDB } from '../utils/dbConnection';
 
 const JobDescription = () => {
 
     const params = useParams()
-    const jobLists = useLoaderData()
+    const {jobLists} = useLoaderData()
     const job = jobLists.find(job => job.id === params.id)
     const { id, jobDescription, jobResponsibility,
         educationalRequirements, experiences, salary,
         jobTitle, contactInformation, location
-    } = job
+    } = job;
+
+    const handleApplyNow = (id) => {
+
+        console.log(id)
+        addToDB(id)
+    }
     return (
         <div className=' my-10 mx-24'>
 
@@ -58,7 +65,7 @@ const JobDescription = () => {
                             {location}
                         </h6>
                     </div>
-                    <button className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
+                    <button onClick={() => handleApplyNow(id)} className='bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             p-3 rounded-lg font-semibold mt-5 w-full '>Apply Now</button>
                 </div>
             </div>
