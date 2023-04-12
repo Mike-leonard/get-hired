@@ -18,3 +18,4 @@
 * and more......
 
 ## Live Site
+[Visit GetHired Live Website](https://golden-basbousa-6f92c5.netlify.app/)

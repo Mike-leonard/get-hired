@@ -14,9 +14,12 @@ const JobDescription = () => {
     } = job;
 
     const handleApplyNow = (id) => {
-
-        console.log(id)
-        addToDB(id)
+        const saved = addToDB(id)
+        if (!saved) {
+            alert('Your application is accepted...')
+        } else {
+            alert('You already applied for this job.')
+        }
     }
     return (
         <div className=' my-10 mx-24'>
